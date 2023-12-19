@@ -1,15 +1,10 @@
 import { ContactListItem } from 'components/ContactListItem/ContactListItem';
 import { StyledList } from './ContactList.style';
 
-export const ContactList = ({ getFilteredContacts, onDeleteContact }) => {
-  const filteredContacts = getFilteredContacts();
-
+export const ContactList = () => {
   return (
     <StyledList>
-      <ContactListItem
-        filteredContacts={filteredContacts}
-        onDeleteContact={onDeleteContact}
-      />
+      <ContactListItem />
     </StyledList>
   );
 };
