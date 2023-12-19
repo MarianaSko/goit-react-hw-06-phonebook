@@ -11,6 +11,7 @@ import { createContactAction } from '../../redux/phonebookSlice';
 
 export const ContactForm = () => {
   const dispatch = useDispatch();
+
   const contacts = useSelector(state => state.phonebook.contacts);
 
   const createContact = e => {
@@ -29,7 +30,9 @@ export const ContactForm = () => {
         return;
       }
     }
+
     dispatch(createContactAction(newContact));
+    e.currentTarget.reset();
   };
 
   return (

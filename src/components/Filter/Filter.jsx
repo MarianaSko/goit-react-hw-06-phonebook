@@ -4,6 +4,7 @@ import { setFilterAction } from '../../redux/phonebookSlice';
 
 export const Filter = () => {
   const dispatch = useDispatch();
+
   return (
     <FilterWrapper>
       <StyledLabel htmlFor="filter">Find contacts by name</StyledLabel>

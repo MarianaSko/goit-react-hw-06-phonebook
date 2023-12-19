@@ -16,9 +16,9 @@ const phonebookSlice = createSlice({
         deleteContactAction: (state, { payload }) => {
             state.contacts = state.contacts.filter(item => item.id !== payload)
         },
+
         setFilterAction: (state, { payload }) => {
             state.filter = payload
-
         }
     }
 })

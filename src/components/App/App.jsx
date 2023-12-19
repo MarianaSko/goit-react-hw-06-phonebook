@@ -15,7 +15,6 @@ export const App = () => {
   return (
     <Container>
       <StyledMainHeading>Phonebook</StyledMainHeading>
-
       <ContactForm />
       <StyledHeading>Contacts</StyledHeading>
       {contacts.length ? (
