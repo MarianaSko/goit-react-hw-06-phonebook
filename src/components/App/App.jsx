@@ -20,7 +20,7 @@ export const App = () => {
       {contacts.length ? (
         <div>
           <Filter />
-          <ContactList></ContactList>
+          <ContactList />
         </div>
       ) : (
         <StyledMessage>
